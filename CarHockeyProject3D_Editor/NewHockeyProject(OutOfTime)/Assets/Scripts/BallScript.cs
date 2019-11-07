@@ -11,11 +11,11 @@ public class BallScript : MonoBehaviour
     public GameObject RedCarFastP1; //new
     public GameObject BlueCarFastP1; //new
 
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
     }
 
     public void OnTriggerEnter(Collider other)
@@ -59,7 +59,7 @@ public class BallScript : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0);
        
-        rb.velocity = rb.position = new Vector3(3.528f, 0.635f, 0);
+        rb.velocity = rb.position = new Vector3(3.528f, 0.534f, -0.094f);
         GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 }
